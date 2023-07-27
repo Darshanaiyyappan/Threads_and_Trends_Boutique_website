@@ -1,0 +1,352 @@
+*
+{
+    box-sizing:border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    text-align:center;
+}
+nav{
+    position:fixed;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    padding-top:5px;
+    width:100%;
+    z-index: 3;
+}
+a:link{
+    color:white;
+    text-decoration:none;
+}
+a:visited{
+    color:white;
+}
+a:hover{
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+a:active{
+    color:white;
+}
+nav ul{
+    display: flex;
+    justify-content:center;
+    list-style:none;
+    z-index: 1;
+}
+nav ul li{
+    margin-left:25px;
+    padding-right: 25px;
+    border-right: 1px solid white;
+    letter-spacing: 5px;
+}
+h1{
+    font-family: 'Sacramento', 'cursive';
+    font-size: 100px;
+}
+h2{
+    font-family:  'Montserrat', sans-serif;
+}
+header{
+    background-image: url("images/vbn.jpg");
+    background-size:cover;
+    height: 700px;
+    position:relative;
+    margin-bottom:25px;
+}
+header p{
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Merriweather', serif;*/
+    margin-top:5px;
+}
+main{
+    text-align: center;
+    width: 50%;
+    margin: 25px auto;
+    font-family: 'Merriweather', serif;
+}
+main p{
+    margin: 30px 0;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+hr{
+    height:0;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 10px;
+    border-color:grey;
+    width: 25%;
+    margin: 50px auto;
+    background-color:white;
+}
+footer{
+    width:100%;
+    height:200px;
+    background-color: lightslategray;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 2;
+    padding:20px;
+}
+section{
+    padding-top: 30px;
+}
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.nav {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .nav .container-fluid {
+        padding-left: 52px;
+        padding-right: 52px;
+    }
+}
+
+.nav .navbar {
+    height: 100%;
+    padding: 0;
+}
+
+.nav .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #588BAE;
+    color: #000080;
+}
+
+.nav .dropdown-menu a.active {
+    color: #ac9072;
+    background: #588BAE;
+}
+
+@media (min-width: 768px) {
+    .nav,
+    .nav .navbar {
+        background: #588BAE !important;
+    }
+    
+    .nav .navbar-brand {
+        display: none;
+    }
+    
+    .nav .navbar-dark a.nav-link {
+        color: #757596;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    
+    .nav .navbar-dark a.nav-link:hover,
+    .nav .navbar-dark a.nav-link.active {
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 5px 0;
+    }
+    
+    .nav,
+    .nav .navbar {
+        background: #000080 !important;
+    }
+    
+    .nav a.nav-link {
+        padding: 5px 0;
+    }
+    
+    .nav .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+/*********************************** CLASSES ***********************************/
+.container-heading{
+    position: absolute;
+    left: 50px;
+    top:200px;
+}
+.circle-image{
+    border-radius: 50%;
+}
+.left{
+    float: left;
+    margin-right: 20px;
+}
+.scrollable{
+    display: flex;
+    overflow-x: scroll;
+}
+.clothes-image{
+    height: 400px;
+}
+.accesory-image{
+    height: 400px;
+}
+.underline{
+    text-decoration: underline;
+}
+.carousel-inner{
+    background-color: darkslategray;
+    padding: 5%;
+    text-align:center;
+}
+.image-adjust{
+    height: 300px;
+    /* padding: 50px 0; */
+    margin: 50px 0;
+}
+/**********************************/
+/*********** Feature CSS **********/
+/**********************************/
+.feature {
+    position: relative;
+}
+
+.feature .feature-col {
+    margin-bottom: 30px;
+}
+
+.feature .feature-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.feature .feature-content i {
+    color: #000080;
+    font-size: 60px;
+    margin-bottom: 30px;
+
+}
+
+.feature .feature-content h2 {
+    font-size: 18px;
+    color: #000080;
+}
+
+.feature .feature-content p {
+    font-size: 15px;
+    color: #000080;
+    margin: 0;
+}
+
+/**********************************/
+/********* Newsletter CSS *********/
+/**********************************/
+.newsletter {
+    position: relative;
+    padding: 30px 0;
+    background: #588BAE;
+}
+
+.newsletter h1 {
+    color: #000080;
+    font-size: 30px;
+    margin: 0;
+}
+
+.newsletter .form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 0 0 auto;
+}
+
+.newsletter .form input {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    color: #000080;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+.newsletter .form button {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    border: none;
+    background: #588BAE;
+    color: #000080;
+    border: 1px solid #ffffff;
+    border-radius: 0 4px 4px 0;
+}
+
+.newsletter .form button:hover {
+    color: #ffffff;
+    background: #588BAE;
+}
+
+@media (max-width: 767.98px) {
+    .newsletter {
+        text-align: center;
+    }
+    
+    .newsletter h1 {
+        margin-bottom: 10px;
+    }
+    
+    .newsletter .form {
+        margin: 0 auto;
+    }
+}
+
+footer .social {
+    position: relative;
+    width: 100%;
+}
+
+.footer {
+    position: relative;
+    padding: 30px 0 0 0;
+    background: #ffffff;
+}
+
+
+
+.footer .social {
+    position: relative;
+    width: 100%;
+}
+
+.footer .social a {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    width: 50px;
+    height: 70px;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000080;
+    border: 1px solid #000080;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.footer .social a:hover {
+    color: #000080;
+    border-color: #000080;
+}
+
+
+
+
+
+/******************************* IDS ********************************/
+
+#contactus{
+    margin: 100px 0;
+}
